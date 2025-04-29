@@ -1,0 +1,39 @@
+.btn-entrar {
+    background-color: #b92912;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Estilo do botão secundário */
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"] {
+    background-color: #b92912;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  button.secondary {
+    background-color: #a6aeb8;
+    color: white;
+  }
+  
+  .no-account {
+    color: #ccc;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  

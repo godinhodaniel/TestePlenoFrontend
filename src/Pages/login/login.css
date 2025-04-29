@@ -1,0 +1,123 @@
+/* login.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #03101f;
+  height: 100%; /* Garantir que o body ocupe 100% da altura */
+  display: flex; /* Flex no body para ajudar na centralização do conteúdo */
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+}
+
+body {
+  overflow: hidden;
+}
+
+.login-container {
+  margin-top: -70px; /* valor negativo sobe o card */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 20px; /* Padding para garantir que não toque nas bordas */
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: -50px;
+}
+
+.login-card {
+  background-color: #0e1e30;
+  padding: 40px 30px;
+  border-radius: 0px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.login-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.login-form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 14px;
+}
+
+.no-account {
+  color: #ccc;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {  /* Adicionando 'text' para garantir que o estilo seja aplicado também ao campo de senha */
+  background-color: #343B41;
+  color: #ffffff;
+  border: 1px solid#fff;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilos para o campo de senha e botão de visibilidade */
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding-right: 40px; /* Ajuste o padding para dar espaço para o ícone */
+}
+
+.toggle-password-btn {
+  position: absolute;
+  right: 25px;
+  top: 30%;
+  transform: translateY(-35%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  color: #aaa;
+  padding: 0;
+  line-height: 1;
+  height: auto;
+  width: auto;
+  display: inline-flex;
+  line-height: 1;
+}
+
+.toggle-password-btn:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para o ícone de olho */
+.toggle-password-btn svg {
+  font-size: 14px;
+  color: #aaa;
+}
