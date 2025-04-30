@@ -1,6 +1,6 @@
 import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
-import './register.css'; // Importando os estilos
+import styles from "./Register.module.css"; // Importando os estilos como CSS Modules
 import CapysLogo from "../../assets/CapysLogo.png";
 import Input from "../../components/input/input";
 
@@ -28,19 +28,18 @@ export default function Register() {
     navigate("/");
   };
 
-
   return (
-    <div className="page-wrapper">
-      <div className="logo-container">
+    <div className={styles.pageWrapper}>
+      <div className={styles.logoContainer}>
         <img src={CapysLogo} alt="" />
-        <Link to="/" className="back-button">Voltar</Link>
+        <Link to="/" className={styles.backButton}>Voltar</Link>
       </div>
-      <div className="form-container">
-        <div className="text-container">
-          <h2 className="form-title">Crie sua conta</h2>
-          <span className="form-text">Rapido e grátis, vamos nessa</span>
+      <div className={styles.formContainer}>
+        <div className={styles.textContainer}>
+          <h2 className={styles.formTitle}>Crie sua conta</h2>
+          <span className={styles.formText}>Rápido e grátis, vamos nessa</span>
         </div>
-        <form onSubmit={handleRegister} className="form">
+        <form onSubmit={handleRegister} className={styles.form}>
 
           <Input label="Nome"
             type="text"
@@ -52,50 +51,50 @@ export default function Register() {
           <Input label="Email"
             type="text"
             placeholder="Digite aqui seu email"
-            value={nome}
-            onChange={(e) => setNome(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
 
           <Input label="Senha"
             type="text"
             placeholder="Digite aqui sua senha"
-            value={nome}
-            onChange={(e) => setNome(e.target.value)}
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
           />
 
           <Input label="Confirmar Senha"
             type="text"
             placeholder="Digite novamente sua senha"
-            value={nome}
-            onChange={(e) => setNome(e.target.value)}
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
           />
 
           <Input label="Bio"
             type="text"
             placeholder="Fale sobre você"
-            value={nome}
-            onChange={(e) => setNome(e.target.value)}
+            value={bio}
+            onChange={(e) => setBio(e.target.value)}
           />
 
           <Input label="Contato"
             type="text"
             placeholder="Opção de Contato"
-            value={nome}
-            onChange={(e) => setNome(e.target.value)}
+            value={contato}
+            onChange={(e) => setContato(e.target.value)}
           />
 
-          <label className="label">Selecionar Cargo</label>
+          <label className={styles.label}>Selecionar Cargo</label>
           <select
             value={modulo}
             onChange={(e) => setModulo(e.target.value)}
-            className="select"
+            className={styles.select}
           >
             <option value="">Selecione o Cargo</option>
             <option value="backend">Desenvolvedor Backend</option>
             <option value="frontend">Desenvolvedor Frontend</option>
           </select>
 
-          <button type="submit" className="button">Cadastrar</button>
+          <button type="submit" className={styles.button}>Cadastrar</button>
         </form>
       </div>
     </div>
