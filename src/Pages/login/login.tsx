@@ -57,7 +57,7 @@ export default function Login() {
               onClick={toggleMostrarSenha}
               className="toggle-password-btn"
             >
-              {mostrarSenha ? <FaEyeSlash /> : <FaEye />} {/* Ícones de olho */}
+              {mostrarSenha ? <FaEyeSlash /> : <FaEye />}
             </button>
           </div>
 

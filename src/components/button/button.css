@@ -1,5 +1,5 @@
 .btn-entrar {
-    background-color: #b92912;
+    background-color: #8B3D07;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -20,13 +20,13 @@
   }
   
   button[type="submit"] {
-    background-color: #b92912;
+    background-color: #8B3D07;
     color: white;
     margin-bottom: 20px;
   }
   
   button.secondary {
-    background-color: #a6aeb8;
+    background-color: #868E96;
     color: white;
   }
   
