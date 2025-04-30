@@ -30,9 +30,9 @@ body {
 }
 
 .login-card {
-  background-color: #0e1e30;
+  background-color: #021A30;
   padding: 40px 30px;
-  border-radius: 0px;
+  border-radius: 4px;
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
